@@ -33,6 +33,94 @@
 	--select-text-bg-color: #ee8241;
 }
 
+@font-face {
+    font-family: '源流明朝';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./vintage-like/GenRyu/GenRyuMinJP-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: '源流明朝';
+    font-style: normal;
+    font-weight: bold;
+    src: url('./vintage-like/GenRyu/GenRyuMinJP-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Source Serif 4';
+    font-style: normal;
+    font-weight: normal;
+    size-adjust: 102%;
+    src: url('./vintage-like/SourceSerif4/SourceSerif4-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Source Serif 4';
+    font-style: italic;
+    font-weight: normal;
+    size-adjust: 102%;
+    src: url('./vintage-like/SourceSerif4/SourceSerif4-It.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Source Serif 4';
+    font-style: normal;
+    font-weight: bold;
+    size-adjust: 102%;
+    src: url('./vintage-like/SourceSerif4/SourceSerif4-Semibold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Source Serif 4';
+    font-style: italic;
+    font-weight: bold;
+    size-adjust: 102%;
+    src: url('./vintage-like/SourceSerif4/SourceSerif4-SemiboldIt.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Sarasa';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./vintage-like/Sarasa/sarasa-fixed-slab-j-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Sarasa';
+    font-style: italic;
+    font-weight: normal;
+    src: url('./vintage-like/Sarasa/sarasa-fixed-slab-j-italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Sarasa';
+    font-style: normal;
+    font-weight: bold;
+    src: url('./vintage-like/Sarasa/sarasa-fixed-slab-j-bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Sarasa';
+    font-style: italic;
+    font-weight: bold;
+    src: url('./vintage-like/Sarasa/sarasa-fixed-slab-j-bolditalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: '源暎ゴシックP';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./vintage-like/GenEi/GenEiGothicP-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: '源暎ゴシックP';
+    font-style: normal;
+    font-weight: bold;
+    src: url('./vintage-like/GenEi/GenEiGothicP-Bold.otf') format('opentype');
+}
+
 
 /***************** 这里定义一些全局信息****************/
 /* header */
@@ -65,7 +153,7 @@
 html,
 body {
     background: #131313;
-    font-family: 'Times New Roman', 宋体;
+    font-family: '源暎ゴシックP', sans-serif;
     font-weight: normal;
     max-width: 55rem;
 }
@@ -426,7 +514,7 @@ hr {
 }
 
 #write code {
-    font-family: 'UbuntuMono Nerd Font', 宋体;
+    font-family: 'Sarasa', monospace;
     padding: .1rem;
     color: #eeffff;
     background: #131313;
@@ -444,7 +532,7 @@ hr {
 }
 
 #write .md-fences {
-    font-family: 'UbuntuMono Nerd Font';
+    font-family: 'Sarasa', monospace;
     color: "#eeffff";
     border: 1px solid #666;
     background-color: #222;
@@ -462,7 +550,7 @@ hr {
 /***************** 这里定义大纲的样式 ****************/
 
 .outline-item {
-    font-family: 'Times New Roman', 黑体;
+    font-family: '源暎ゴシックP', sans-serif;
     font-size: 0.8rem;
     line-height: 1.35;
 }
@@ -545,12 +633,12 @@ hr {
 #write h5,
 #write h6 {
     font-weight: normal;
-    font-family: 'Times New Roman', 黑体;
+    font-family: 'Source Serif 4', '源流明朝', serif;
 }
 
 #write h1 {
     font-size: 1.5rem;
-    font-family: 'Helvetica', 黑体;
+    font-family: 'Source Serif 4', '源流明朝', serif;
     color: #ffffff;
     text-align: center;
     margin-top: 3rem;
@@ -558,7 +646,7 @@ hr {
 }
 
 #write h2 {
-    font-family: 'Helvetica', 黑体;
+    font-family: 'Source Serif 4', '源流明朝', serif;
     font-size: 1rem;
     color: #ee8241;
     /* text-decoration:  overline; */
@@ -579,7 +667,7 @@ hr {
 }
 
 #write h3 {
-    font-family: 'Helvetica', 黑体;
+    font-family: 'Source Serif 4', '源流明朝', serif;
     color: #ee8241;
     font-size: 1rem;
     margin-top: 0.75rem;
@@ -589,7 +677,7 @@ hr {
 #write h4,
 #write h5,
 #write h6 {
-    font-family: 'Helvetica', 黑体;
+    font-family: 'Source Serif 4', '源流明朝', serif;
     color: black;
     font-size: 1rem;
     margin-top: 0.5rem;
@@ -614,7 +702,7 @@ li {
     font-size: 1rem;
     line-height: 1.75;
     margin: 0.25rem;
-    font-family: 'Times New Roman', 宋体;
+    font-family: 'Source Serif 4', '源流明朝', serif;
 }
 
 /*working for PDF nothing, for Typora only for text*/
@@ -622,7 +710,7 @@ li p {
     font-size: 1rem;
     line-height: 1.75;
     margin: 0.25rem;
-    font-family: 'Times New Roman', 宋体;
+    font-family: 'Source Serif 4', '源流明朝', serif;
 }
 
 ul,
@@ -634,7 +722,7 @@ ol {
 /***************** 这里定义段落的样式 ****************/
 
 p {
-    font-family: 'Times New Roman', 宋体;
+    font-family: 'Source Serif 4', '源流明朝', serif;
     font-size: 1rem;
     line-height: 1.75;
     margin: 0.5rem 0 0.5rem 0;
@@ -661,7 +749,7 @@ blockquote {
 }
 
 blockquote p {
-    font-family: 'Times New Roman', 宋体;
+    font-family: 'Source Serif 4', '源流明朝', serif;
     padding: 0.25rem 0.5rem;
     font-size: 1rem;
     line-height: 1.75;
@@ -681,11 +769,11 @@ strong span {
 
 table {
     position: relative;
-    font-family: 'Times New Roman', 宋体;
+    font-family: 'Source Serif 4', '源流明朝', serif;
     color: #aaaaaa;
     width: 80%;
     left: 10%;
-    *border-collapse: collapse;
+    border-collapse: collapse;
     border-spacing: 0;
     border-top: solid #777777 3px;
     border-bottom: solid #777777 3px;
